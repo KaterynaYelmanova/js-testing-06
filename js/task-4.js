@@ -31,3 +31,11 @@ list.before(titleSmall);
 const textBefore = document.createElement("p");
 textBefore.textContent = "nmjupp ertf  cdf";
 list.before(textBefore);
+
+// читання
+console.log(textBefore.innerHTML);
+console.log(titleSmall.innerHTML);
+console.log(text);
+
+//зміна
+titleSmall.innerHTML = 'New and <span class="accent">improved</span> title';
