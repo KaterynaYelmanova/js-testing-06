@@ -36,3 +36,6 @@ const newMarkup = newText46
 
 newListRed.insertAdjacentHTML("beforeend", newMarkup);
 newListRed.insertAdjacentHTML("beforebegin", "<h2>Test Red 1-6</h2");
+
+//додаємо кнопку
+newListRed.insertAdjacentHTML("afterbegin", "<button>Button</button>");
