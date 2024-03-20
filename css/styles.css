@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 16px;
+}
+.accent {
+  color: tomato;
+  text-decoration: underline;
+}
+.list-end {
+  color: red;
+}
+
+input {
+  width: 100%;
+  max-width: 320px;
+  padding: 8px;
+  font: inherit;
+  letter-spacing: inherit;
+}

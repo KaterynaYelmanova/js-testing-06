@@ -39,3 +39,48 @@ newListRed.insertAdjacentHTML("beforebegin", "<h2>Test Red 1-6</h2");
 
 //додаємо кнопку
 newListRed.insertAdjacentHTML("afterbegin", "<button>Button</button>");
+
+//отримаємо посилання на кнопку і додамо на неї слухача події
+
+const button = document.querySelector("button");
+//перший спосіб
+button.addEventListener("click", () => {
+  console.log("The button");
+});
+
+const buttonSingle = document.querySelector(".btn");
+buttonSingle.addEventListener("click", () => {
+  console.log("The button single");
+});
+
+//другий спосіб
+const handleClick = () => {
+  console.log("The button was pressed and now the next image will appear");
+};
+
+button.addEventListener("click", handleClick);
+buttonSingle.addEventListener("click", handleClick);
+
+//події клавіатури
+
+document.addEventListener("keydown", (event) => {
+  console.log("Keydown: ", event);
+});
+document.addEventListener("keyup", (event) => {
+  console.log("Keyup: ", event);
+});
+document.addEventListener("keydown", (event) => {
+  console.log("key: ", event.key);
+  console.log("code: ", event.code);
+});
+
+//подія input тільки на текстових полях та textarea
+//можна ще додати trim()
+//output.textContent = event.currentTarget.value.trim();
+
+const textInput = document.querySelector(".text-input");
+const output = document.querySelector(".output");
+
+textInput.addEventListener("input", (event) => {
+  output.textContent = event.currentTarget.value;
+});
